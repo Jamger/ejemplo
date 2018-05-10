@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function indexUsers()
     {
     	$users = User::all();
-        $administrador = Role::find(2);
+        $administrador = Role::find(1);
     	//dd($users);
 
     	return view('Browse.users')
